@@ -1,6 +1,14 @@
 #include <iostream>
 
+int MULTIPLICATION(){
+    int x,y;
+    std::cout<<"Podaj liczby: \n";
+    std::cin>>x>>y;
+    std::cout<<"Wynik mnozenia to: \t";
+    return(x*y);
+}
+
 int main() {
-    std::cout << "Hello2" << std::endl;
+    std::cout << MULTIPLICATION() << std::endl;
     return 0;
 }
