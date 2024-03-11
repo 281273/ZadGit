@@ -1,14 +1,25 @@
 #include <iostream>
+#include <string>
 
-int MULTIPLICATION(){
-    int x,y;
-    std::cout<<"Podaj 2 liczby: \n";
-    std::cin>>x>>y;
-    std::cout<<"Wynik mnozenia to: \t";
-    return(x*y);
-}
+void MULTIPLICATION(){
+    std::string x,y;
+        while(true){
+            int wynik;
+
+            std::cout<<"<e - Konczy progeram> Podaj 2 liczby: \n";
+            std::cin>>x>>y;
+
+            if(x=="e"||y=="e"){
+                std::cout<<"Koniec programu";
+                break;
+            }
+
+            wynik=stoi(x)*stoi(y);
+            std::cout<<"Wynik mnozenia "<<x<<" i "<<y<<" to "<<wynik<<"\n";
+            }
+    }
 
 int main() {
-    std::cout << MULTIPLICATION() << std::endl;
+   MULTIPLICATION();
     return 0;
 }
